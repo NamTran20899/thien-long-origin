@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/paginate.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./resources/tailwind.config.js"></script>
+    <!-- Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&family=Maitree:wght@600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    
+    <title>Tin Tức</title>
+</head>
+<body class="grid">
+    <!-- Header -->
+    <header>
+        <!-- NavBar -->
+        <nav class="navbar">
+            <div class="header-bg"></div>
+            <div class="header-left">
+                <a href="index.html" class="">Trang chủ</a>
+                <a href="tin-tuc.html" class="">Tin tức</a>
+                <a href="#" class="">Đăng ký tài khoản</a>
+            </div>
+            <img src="./resources/images/logo.png" alt="logo" class="" />
+            <div class="header-right">
+                <a href="#" class="">Nạp tiền</a>
+                <a href="#" class="">Hướng dẫn</a>
+                <a href="#" class="">1900 988961</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Content -->
+    <main class="mt-42">
+        <div id="news">
+            <!-- News Title -->
+            <div class="grid grid-cols-3 items-center" id="news-title">
+                <img src="./resources/images/collapse-content-line.png" alt="">
+                <h3 class="text-center">Tin tức <span>&</span> Sự kiện</h3>
+                <img class="rotate-180" src="./resources/images/collapse-content-line.png" alt="">
+            </div>
+            <div id="news-head">
+                <img src="./resources/images/bang-tin-tuc.png" alt="">
+            </div>
+            <div class="board-select flex-col mt-14 pl-10">
+                <!-- Board Head -->
+                <div class="flex gap-20 mt-4 board-btn-group">
+                    <button class="board-button" id="btn-news-1">
+                        <h6>TIN TỨC</h6>
+                    </button>
+                    <button class="board-button" id="btn-news-2">
+                        <h6>SỰ KIỆN</h6>
+                    </button>
+                    <button class="board-button" id="btn-news-3">
+                        <h6>TÍNH NĂNG</h6>
+                    </button>
+                    <button class="board-button" id="btn-news-4">
+                        <h6>HƯỚNG DẪN</h6>
+                    </button>
+                </div>
+                <div class="carousel-main">
+                    <div class="carousel-cell">
+                        <div id="tin-tuc">
+                            <section>
+                                <div class="data-container"></div>
+                                <div id="pagination-tintuc"></div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div id="su-kien">
+                            <section>
+                                <div class="data-container"></div>
+                                <div id="pagination-sukien"></div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div id="tinh-nang">
+                            <section>
+                                <div class="data-container"></div>
+                                <div id="pagination-tinhnang"></div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div id="huong-dan">
+                            <section>
+                                <div class="data-container"></div>
+                                <div id="pagination-huongdan"></div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-[40rem] relative w-full justify-center">
+        <div class="">
+            <p>
+                Phát hành bởi Efun Corp
+                <br> Hotline: 1900 988961
+                <br> Email: support@efun.vn
+                <br> Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
+                <br> Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
+                <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 w-7/12 absolute top-0 left-80">
+            <div class="flex">
+                <img src="./resources/images/block18.png" alt="" id="block18" class="mt-4">
+                <img src="./resources/images/logo.png" alt="" id="footer-logo" class="">
+            </div>
+            
+            <img src="./resources/images/Artboard 2.png" alt="" id="artboard" class="justify-self-end">
+        </div>
+        
+    </footer>
+
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./resources/js/flickyti.js"></script>
+    <!-- Pagination -->
+    <script src="./resources/js/paginate.js"></script>
+    <script src="./resources/js/main.js"></script>
+</body>
+</html>
