@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&family=Maitree:wght@600&family=Roboto+Slab:wght@600&display=swap');
 @font-face { font-family: Brams; src: url('../fonts/brams.ttf'); }
 @font-face { font-family: ThuPhap; src: url('../fonts/thuphap.ttf'); }
 @font-face { font-family: ThuPhap2; src: url('../fonts/VNI-Thufap2.ttf'); }
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&family=Maitree:wght@600&family=Roboto+Slab:wght@600&display=swap');
 
 *, ::after, ::before {
     box-sizing: border-box;
