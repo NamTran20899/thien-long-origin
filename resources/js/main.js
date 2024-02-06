@@ -1233,7 +1233,7 @@ $(function() {
             callback: function (response, pagination) {
                 window.console && console.log(response, pagination);
 
-                var dataHtml = '<div class="board-info flex flex-col gap-3 mt-16">';
+                var dataHtml = '<div class="board-info flex flex-col gap-3 mt-6">';
 
                 $.each(response, function (index, item) {
                     dataHtml += `
