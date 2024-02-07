@@ -563,6 +563,7 @@ $(function() {
                     id: 1,
                     title: "Nâng cấp tính năng giao dịch, tăng cường bảo mật r...",
                     date: "22/06",
+                    content: `<div><p>abc</p></div>`
                 },
             ];
 
@@ -1237,7 +1238,7 @@ $(function() {
 
                 $.each(response, function (index, item) {
                     dataHtml += `
-                                <div class="flex justify-between border-b border-[#385a54]">  
+                                <div class="flex justify-between border-b border-[#385a54] cursor-pointer">  
                                     <p class="max-w-[675px] truncate"> ${item.title} </p>
                                     <p> ${item.date} </p>
                                 </div>

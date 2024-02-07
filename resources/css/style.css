@@ -261,3 +261,20 @@ footer #artboard {
     flex-direction: column;
     justify-items: right;
 }
+
+#news-detail h1 {
+    font-family: 'Maitree', serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #385a54;
+}
+#news-detail a {
+    font-family: 'Maitree', serif;
+    font-size: 15px;
+    color: #385a54;
+}
+#detail-img p {
+    font-family: 'Maitree', serif;
+    font-size: 15px;
+    color: #385a54;
+}
