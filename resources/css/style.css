@@ -80,7 +80,7 @@ main {
 }
 /*-- Banner --*/
 #banner .flickity-page-dots {
-    bottom: 11.5% !important;
+    bottom: 2.5% !important;
     text-align: right !important;
 }
 #banner .flickity-page-dots .dot {
@@ -277,4 +277,14 @@ footer #artboard {
     font-family: 'Maitree', serif;
     font-size: 15px;
     color: #385a54;
+}
+
+/*-- Responsive --*/
+@media screen and (max-width: 1200px) {
+    .header-right, .header-left {
+        padding-top: 35px;
+    }
+    main {
+        max-width: 1100px;
+    }
 }
