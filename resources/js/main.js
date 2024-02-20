@@ -765,6 +765,57 @@ $(function() {
                     title: 'Mở phó bản mới "Khiêu Chiến Nhất Phẩm Đường"',
                     date: "22/04",
                 },
+                {
+                    id: 1,
+                    title: "Cập nhật phiên bản 14.5",
+                    date: "22/06",
+                    dataId: "1",
+                },
+                {
+                    id: 2,
+                    title: "Nâng cấp tính năng giao dịch, tăng cường bảo mật rương đồ",
+                    date: "16/06",
+                },
+                {
+                    id: 3,
+                    title: "Hướng dẫn nâng cấp trang bị thú cưng",
+                    date: "11/06",
+                },
+                {
+                    id: 4,
+                    title: 'Sự kiện "Ngày Hè Sôi Động"',
+                    date: "06/06",
+                },
+                {
+                    id: 5,
+                    title: "Mở tính năng đăng ký Bang Hội",
+                    date: "01/06",
+                },
+                {
+                    id: 6,
+                    title: 'Thông báo Gộp máy chủ S1 "Hoang Đế" và S2 "Hoàng..."',
+                    date: "01/06",
+                },
+                {
+                    id: 7,
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
+                    date: "31/05",
+                },
+                {
+                    id: 8,
+                    title: 'Mở phó bản mới "Đaị Liêu Kim Tướng"',
+                    date: "15/05",
+                },
+                {
+                    id: 9,
+                    title: 'Nâng cấp tính năng "Sư Đồ" Thêm kỹ năng, thêm v...',
+                    date: "06/05",
+                },
+                {
+                    id: 10,
+                    title: 'Mở phó bản mới "Khiêu Chiến Nhất Phẩm Đường"',
+                    date: "22/04",
+                },
             ];
 
             return result;
