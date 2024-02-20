@@ -26,13 +26,12 @@
     <header>
         <!-- NavBar -->
         <nav class="navbar">
-            <div class="header-bg"></div>
             <div class="header-left">
                 <a href="index.html" class="">Trang chủ</a>
                 <a href="tin-tuc.html" class="">Tin tức</a>
                 <a href="#" class="">Đăng ký tài khoản</a>
             </div>
-            <img src="./resources/images/logo.png" alt="logo" class="" />
+            <img src="./resources/images/logo.png" alt="logo" />
             <div class="header-right">
                 <a href="#" class="">Nạp tiền</a>
                 <a href="#" class="">Hướng dẫn</a>
@@ -104,49 +103,43 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-24 gap-4 mt-4">
-                <div class="col-span-4 relative">
-                    <img class="" src="./resources/images/btn-group.png" alt="">
-                    <div class="btn-group">
-                        <div class="absolute top-0 left-0 flex-col items-center w-full h-full">
-                            <button class="px-5 h-1/4 gap-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
-                                    <path fill="white" d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976M13 10V5l-5 7h3v5l5-7z"/>
-                                </svg>                                      
-                                <p class="text-right">MẤT ĐỒ / <br>TÀI KHOẢN</p>
-                            </button>
-                            <button class="px-5 h-1/4 gap-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 32 32">
-                                    <path fill="white" d="M16 8.087c1.007 0 1.826-.82 1.826-1.826c0-1.006-.82-1.825-1.826-1.825s-1.826.82-1.826 1.826c0 1.008.82 1.827 1.826 1.827zm0-3.044a1.217 1.217 0 1 1 0 2.437a1.218 1.218 0 0 1 0-2.437m-11.077 8.25c.812 2.61 1.132 6.645 1.257 9.41c.027 0 .053-.008.08-.008h19.48c.027 0 .054.008.08.01c.125-2.767.445-6.8 1.257-9.413c-.45-.23-.813-.59-1.05-1.038c-2.4 2.048-5.157 6.18-5.157 6.18s-3.026-6.058-4.305-9.812c-.182.045-.37.074-.565.074s-.383-.03-.565-.073c-1.278 3.754-4.305 9.812-4.305 9.812s-2.756-4.132-5.157-6.18c-.235.446-.6.808-1.05 1.037zm.73-2.163c0-1.007-.82-1.826-1.827-1.826S2 10.124 2 11.13s.82 1.826 1.826 1.826s1.826-.82 1.826-1.826zm-1.827 1.218a1.217 1.217 0 1 1 0-2.437a1.217 1.217 0 0 1 0 2.439zM25.74 23.913H6.26a1.826 1.826 0 0 0 .001 3.651h19.48a1.827 1.827 0 0 0-.001-3.653zm2.434-14.61c-1.007 0-1.826.82-1.826 1.827s.82 1.826 1.826 1.826S30 12.136 30 11.13s-.82-1.826-1.826-1.826zm0 3.045a1.217 1.217 0 1 1-.001-2.439a1.217 1.217 0 0 1 .001 2.441z"/>
-                                </svg>                   
-                                <p>DỊCH VỤ VIP</p>
-                            </button>
-                            <button class="px-5 h-1/4 gap-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 20 20">
-                                    <path fill="white" d="M19.388.405a.605.605 0 0 0-1.141.399c.929 2.67-.915 4.664-2.321 5.732l-.568-.814c-.191-.273-.618-.5-.95-.504l-3.188.014a2.162 2.162 0 0 0-1.097.338L.729 12.157a1.01 1.01 0 0 0-.247 1.404l4.269 6.108c.32.455.831.4 1.287.082l9.394-6.588c.27-.191.582-.603.692-.918l.998-3.145c.11-.314.043-.793-.148-1.066l-.346-.496c1.888-1.447 3.848-4.004 2.76-7.133m-4.371 9.358a1.608 1.608 0 0 1-2.24-.396a1.614 1.614 0 0 1 .395-2.246a1.607 1.607 0 0 1 1.868.017c-.272.164-.459.26-.494.275a.606.606 0 0 0 .259 1.153c.086 0 .174-.02.257-.059c.194-.092.402-.201.619-.33a1.615 1.615 0 0 1-.664 1.586"/>
-                                </svg>
-                                <p>GIFTCODE</p>
-                            </button>
-                            <button class="px-5 h-1/4 gap-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1.66em" height="1.5em" viewBox="0 0 1696 1536">
-                                    <path fill="white" d="M1671 350q40 57 18 129l-275 906q-19 64-76.5 107.5T1215 1536H292q-77 0-148.5-53.5T44 1351q-24-67-2-127q0-4 3-27t4-37q1-8-3-21.5t-3-19.5q2-11 8-21t16.5-23.5T84 1051q23-38 45-91.5t30-91.5q3-10 .5-30t-.5-28q3-11 17-28t17-23q21-36 42-92t25-90q1-9-2.5-32t.5-28q4-13 22-30.5t22-22.5q19-26 42.5-84.5T372 283q1-8-3-25.5t-2-26.5q2-8 9-18t18-23t17-21q8-12 16.5-30.5t15-35t16-36t19.5-32T504.5 12t36-11.5T588 6l-1 3q38-9 51-9h761q74 0 114 56t18 130l-274 906q-36 119-71.5 153.5T1057 1280H188q-27 0-38 15q-11 16-1 43q24 70 144 70h923q29 0 56-15.5t35-41.5l300-987q7-22 5-57q38 15 59 43m-1064 2q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1279 352l21-64q4-13-2-22.5t-20-9.5H670q-13 0-25.5 9.5T628 288zm-83 256q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1196 608l21-64q4-13-2-22.5t-20-9.5H587q-13 0-25.5 9.5T545 544z"/>
-                                </svg>
-                                <p>ĐIỀU KHOẢN</p>
-                            </button>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-span-10 grid grid-cols-2">
-                    <img class="" src="./resources/images/group.png" alt="">
-                    <img class="" src="./resources/images/fanpage.png" alt="">
-                </div>
-                <div class="col-span-10 flex">
-                    <div>
-                        <img class="" src="./resources/images/btn-hinh-anh-game.png" alt="">
+            <div class="flex gap-4 mt-4">
+                <div class="relative btn-group">
+                    <img class="h-full w-full" src="./resources/images/btn-group.png" alt="">
+                    <div class="absolute top-0 left-0 flex-col items-center h-full">
+                        <button class="px-5 h-1/4 gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                                <path fill="white" d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976M13 10V5l-5 7h3v5l5-7z"/>
+                            </svg>                                      
+                            <p class="text-right">MẤT ĐỒ / <br>TÀI KHOẢN</p>
+                        </button>
+                        <button class="px-5 h-1/4 gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 32 32">
+                                <path fill="white" d="M16 8.087c1.007 0 1.826-.82 1.826-1.826c0-1.006-.82-1.825-1.826-1.825s-1.826.82-1.826 1.826c0 1.008.82 1.827 1.826 1.827zm0-3.044a1.217 1.217 0 1 1 0 2.437a1.218 1.218 0 0 1 0-2.437m-11.077 8.25c.812 2.61 1.132 6.645 1.257 9.41c.027 0 .053-.008.08-.008h19.48c.027 0 .054.008.08.01c.125-2.767.445-6.8 1.257-9.413c-.45-.23-.813-.59-1.05-1.038c-2.4 2.048-5.157 6.18-5.157 6.18s-3.026-6.058-4.305-9.812c-.182.045-.37.074-.565.074s-.383-.03-.565-.073c-1.278 3.754-4.305 9.812-4.305 9.812s-2.756-4.132-5.157-6.18c-.235.446-.6.808-1.05 1.037zm.73-2.163c0-1.007-.82-1.826-1.827-1.826S2 10.124 2 11.13s.82 1.826 1.826 1.826s1.826-.82 1.826-1.826zm-1.827 1.218a1.217 1.217 0 1 1 0-2.437a1.217 1.217 0 0 1 0 2.439zM25.74 23.913H6.26a1.826 1.826 0 0 0 .001 3.651h19.48a1.827 1.827 0 0 0-.001-3.653zm2.434-14.61c-1.007 0-1.826.82-1.826 1.827s.82 1.826 1.826 1.826S30 12.136 30 11.13s-.82-1.826-1.826-1.826zm0 3.045a1.217 1.217 0 1 1-.001-2.439a1.217 1.217 0 0 1 .001 2.441z"/>
+                            </svg>                   
+                            <p>DỊCH VỤ VIP</p>
+                        </button>
+                        <button class="px-5 h-1/4 gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 20 20">
+                                <path fill="white" d="M19.388.405a.605.605 0 0 0-1.141.399c.929 2.67-.915 4.664-2.321 5.732l-.568-.814c-.191-.273-.618-.5-.95-.504l-3.188.014a2.162 2.162 0 0 0-1.097.338L.729 12.157a1.01 1.01 0 0 0-.247 1.404l4.269 6.108c.32.455.831.4 1.287.082l9.394-6.588c.27-.191.582-.603.692-.918l.998-3.145c.11-.314.043-.793-.148-1.066l-.346-.496c1.888-1.447 3.848-4.004 2.76-7.133m-4.371 9.358a1.608 1.608 0 0 1-2.24-.396a1.614 1.614 0 0 1 .395-2.246a1.607 1.607 0 0 1 1.868.017c-.272.164-.459.26-.494.275a.606.606 0 0 0 .259 1.153c.086 0 .174-.02.257-.059c.194-.092.402-.201.619-.33a1.615 1.615 0 0 1-.664 1.586"/>
+                            </svg>
+                            <p>GIFTCODE</p>
+                        </button>
+                        <button class="px-5 h-1/4 gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.66em" height="1.5em" viewBox="0 0 1696 1536">
+                                <path fill="white" d="M1671 350q40 57 18 129l-275 906q-19 64-76.5 107.5T1215 1536H292q-77 0-148.5-53.5T44 1351q-24-67-2-127q0-4 3-27t4-37q1-8-3-21.5t-3-19.5q2-11 8-21t16.5-23.5T84 1051q23-38 45-91.5t30-91.5q3-10 .5-30t-.5-28q3-11 17-28t17-23q21-36 42-92t25-90q1-9-2.5-32t.5-28q4-13 22-30.5t22-22.5q19-26 42.5-84.5T372 283q1-8-3-25.5t-2-26.5q2-8 9-18t18-23t17-21q8-12 16.5-30.5t15-35t16-36t19.5-32T504.5 12t36-11.5T588 6l-1 3q38-9 51-9h761q74 0 114 56t18 130l-274 906q-36 119-71.5 153.5T1057 1280H188q-27 0-38 15q-11 16-1 43q24 70 144 70h923q29 0 56-15.5t35-41.5l300-987q7-22 5-57q38 15 59 43m-1064 2q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1279 352l21-64q4-13-2-22.5t-20-9.5H670q-13 0-25.5 9.5T628 288zm-83 256q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1196 608l21-64q4-13-2-22.5t-20-9.5H587q-13 0-25.5 9.5T545 544z"/>
+                            </svg>
+                            <p>ĐIỀU KHOẢN</p>
+                        </button>
                     </div>
-                    <div>
-                        <img class="mt-[6.25%]" src="./resources/images/Layer.png" alt="">
-                    </div>
+                </div>
+                <div class="flex">
+                    <img class="w-1/2" src="./resources/images/group.png" alt="">
+                    <img class="w-1/2" src="./resources/images/fanpage.png" alt="">
+                </div>
+                <div class="flex">
+                    <img class="" src="./resources/images/btn-hinh-anh-game.png" alt="">
+                    <img class="mt-[5.5%] h-[75.5%] w-[77%]" src="./resources/images/Layer.png" alt="">
                 </div>
             </div>
         </div>
@@ -286,61 +279,47 @@
                     <img src="./resources/images/line.png" alt="">
                 </div>
             </div>
-            <div class="sect-button-group grid grid-cols-14 text-center mt-4">
+            <div class="sect-button-group grid grid-cols-14 text-center mt-10">
                 <button class="sect-button" id="btn-1">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-3">
                     <p>Tuyệt <br> Tình <br> Cốc</p>
                 </button>
                 <button class="sect-button" id="btn-2">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-1">
                     <p>Đảo <br> Hoa <br> Đào</p>
                 </button>
                 <button class="sect-button" id="btn-3">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-1.5">
                     <p>Nga <br> Mi</p>
                 </button>
                 <button class="sect-button" id="btn-4">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-3">
                     <p>Cái <br> Bang</p>
                 </button>
                 <button class="sect-button" id="btn-5">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-1.5">
                     <p>Quỷ <br> Cốc</p>
                 </button>
                 <button class="sect-button" id="btn-6">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-4">
                     <p>Đường <br> Môn</p>
                 </button>
                 <button class="sect-button" id="btn-7">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-3">
                     <p>Minh <br> Giáo</p>
                 </button>
                 <button class="sect-button" id="btn-8">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-3">
                     <p>Mộ <br> Dung</p>
                 </button>
                 <button class="sect-button" id="btn-9">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-3">
                     <p>Thiếu <br> Lâm</p>
                 </button>
                 <button class="sect-button" id="btn-10">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-3.5">
                     <p>Thiên <br> Long</p>
                 </button>
                 <button class="sect-button" id="btn-11">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-3.5">
                     <p>Thiên <br> Sơn</p>
                 </button>
                 <button class="sect-button" id="btn-12">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-2.5">
                     <p>Võ <br> Đang</p>
                 </button>
                 <button class="sect-button" id="btn-13">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-2">
                     <p>Tiêu <br> Giao</p>
                 </button>
                 <button class="sect-button" id="btn-14">
-                    <img src="./resources/images/Rectangle-3.png" alt="" class="ml-2">
                     <p>Tinh <br> Túc</p>
                 </button>
             </div>
