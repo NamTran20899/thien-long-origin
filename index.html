@@ -25,12 +25,19 @@
     <header>
         <!-- NavBar -->
         <nav class="navbar">
+            <!-- Navbar-Mobi -->
+            <img src="./resources/images/logo-mobi.png" alt="" id="logo-mobi">
+            <div class="mobi-btn gap-8">
+                <img src="./resources/images/dowload-mobi.png" alt="">
+                <img src="./resources/images/register-mobi.png" alt="">
+            </div>
+            <!-- Navbar-Mobi -->
             <div class="header-left">
                 <a href="index.html" class="">Trang chủ</a>
                 <a href="tin-tuc.html" class="">Tin tức</a>
                 <a href="#" class="">Đăng ký tài khoản</a>
             </div>
-            <img src="./resources/images/logo.png" alt="logo" />
+            <img src="./resources/images/logo.png" alt="logo" id="logo"/>
             <div class="header-right">
                 <a href="#" class="">Nạp tiền</a>
                 <a href="#" class="">Hướng dẫn</a>
@@ -41,7 +48,7 @@
     <!-- Content -->
     <main class="mt-96">
         <!-- Banner -->
-        <div id="banner">
+        <div class="banner">
             <div class="flex gap-4">
                 <div class="gap-4">
                     <div class="dowload-btn">
@@ -101,7 +108,6 @@
                     <img class="" src="./resources/images/banner-event.png" alt="" class="w-[750px]">
                 </div>
             </div>
-
             <div class="flex gap-4 mt-4">
                 <div class="relative btn-group">
                     <img class="h-full w-full" src="./resources/images/btn-group.png" alt="">
@@ -132,19 +138,38 @@
                         </button>
                     </div>
                 </div>
-                <div class="flex">
-                    <img class="w-1/2" src="./resources/images/group.png" alt="">
-                    <img class="w-1/2" src="./resources/images/fanpage.png" alt="">
+                <div class="qr-code grid grid-flow-col">
+                    <img src="./resources/images/group.png" alt="">
+                    <img src="./resources/images/fanpage.png" alt="">
                 </div>
-                <div class="flex">
-                    <img class="" src="./resources/images/btn-hinh-anh-game.png" alt="">
-                    <img class="mt-[5.5%] h-[75.5%] w-[77%]" src="./resources/images/Layer.png" alt="">
+                <div class="grid grid-flow-col auto-cols-auto">
+                    <img class="title-lib" src="./resources/images/btn-hinh-anh-game.png" alt="">
+                    <img class="game-img" src="./resources/images/Layer.png" alt="">
                 </div>
             </div>
         </div>
+        <!-- Banner-Mobi -->
+        <div class="banner-mobi flex justify-center items-center">
+            <div class="test">
+                <div class="banner-1 z-10">
+                    <img class="w-full" src="./resources/images/logo-mobi.png" alt="">
+                    <img class="" src="./resources/images/signin-mobi.png" alt="">
+                </div>
+                <div class="banner-2 z-10">
+                    <img src="./resources/images/card-mobi.png" alt="">
+                    <img src="./resources/images/code-mobi.png" alt="">
+                </div>
+                <div class="banner-3 z-10 test-1 gap-4 flex-col flex">
+                    <img src="./resources/images/btn1-mobi.png" alt="">
+                    <img src="./resources/images/btn2-mobi.png" alt="">
+                    <img src="./resources/images/btn3-mobi.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Banner-Mobi -->
 
         <!-- News -->
-        <div id="news">
+        <div id="news" class="hidden">
             <!-- News Title -->
             <div class="grid grid-cols-3 items-center" id="news-title">
                 <img src="./resources/images/collapse-content-line.png" alt="">
@@ -219,7 +244,7 @@
         </div>
 
         <!-- Sect -->
-        <div id="sect">
+        <div id="sect" class="hidden">
             <!-- Sect-Title -->
             <div class="grid grid-cols-3 items-center">
                 <img src="./resources/images/collapse-content-line.png" alt="">
@@ -278,47 +303,61 @@
                     <img src="./resources/images/line.png" alt="">
                 </div>
             </div>
-            <div class="sect-button-group grid grid-cols-14 text-center mt-10">
+            <div class="sect-button-group flex space-x-10 text-center mt-6">
                 <button class="sect-button" id="btn-1">
+                    <div class="sect-dot"></div>
                     <p>Tuyệt <br> Tình <br> Cốc</p>
                 </button>
                 <button class="sect-button" id="btn-2">
+                    <div class="sect-dot"></div>
                     <p>Đảo <br> Hoa <br> Đào</p>
                 </button>
                 <button class="sect-button" id="btn-3">
+                    <div class="sect-dot"></div>
                     <p>Nga <br> Mi</p>
                 </button>
                 <button class="sect-button" id="btn-4">
+                    <div class="sect-dot"></div>
                     <p>Cái <br> Bang</p>
                 </button>
                 <button class="sect-button" id="btn-5">
+                    <div class="sect-dot"></div>
                     <p>Quỷ <br> Cốc</p>
                 </button>
                 <button class="sect-button" id="btn-6">
+                    <div class="sect-dot"></div>
                     <p>Đường <br> Môn</p>
                 </button>
                 <button class="sect-button" id="btn-7">
+                    <div class="sect-dot"></div>
                     <p>Minh <br> Giáo</p>
                 </button>
                 <button class="sect-button" id="btn-8">
+                    <div class="sect-dot"></div>
                     <p>Mộ <br> Dung</p>
                 </button>
                 <button class="sect-button" id="btn-9">
+                    <div class="sect-dot"></div>
                     <p>Thiếu <br> Lâm</p>
                 </button>
                 <button class="sect-button" id="btn-10">
+                    <div class="sect-dot"></div>
                     <p>Thiên <br> Long</p>
                 </button>
                 <button class="sect-button" id="btn-11">
+                    <div class="sect-dot"></div>
                     <p>Thiên <br> Sơn</p>
                 </button>
                 <button class="sect-button" id="btn-12">
+                    <div class="sect-dot"></div>
                     <p>Võ <br> Đang</p>
                 </button>
                 <button class="sect-button" id="btn-13">
+                    <div class="sect-dot"></div>
                     <p>Tiêu <br> Giao</p>
                 </button>
                 <button class="sect-button" id="btn-14">
+                    <div class="sect-dot"></div>
                     <p>Tinh <br> Túc</p>
                 </button>
             </div>

@@ -10,7 +10,7 @@ $('.carousel').flickity({
     freeScroll: true,
     prevNextButtons: false,
     draggable: false,
-    pageDots: true,
+    pageDots: false,
 });
 var $carousel = $('.carousel').flickity();
 $('.sect-button-group').on( 'click', '.sect-button', function() {
