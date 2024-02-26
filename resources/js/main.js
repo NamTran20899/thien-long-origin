@@ -1,3 +1,25 @@
+function hamburgerBtn() {
+    const menuWidth = document.getElementById("hamburger").style.transform;
+
+    if (menuWidth == "translateX(278px)") {
+        document.getElementById("hamburger").style.transform = "translateX(0)";
+    } else {
+        document.getElementById("hamburger").style.transform = "translateX(278px)";
+    }
+}
+
+function openNav() {
+    const sideBarWidth = document.getElementById("mySidenav").style.transform;
+    
+    if (sideBarWidth == "translateX(120px)") {
+        document.getElementById("mySidenav").style.transform = "translateX(0)";
+        document.getElementById("close-open").style.transform = "rotate(0deg)";
+    } else {
+        document.getElementById("mySidenav").style.transform = "translateX(120px)";
+        document.getElementById("close-open").style.transform = "rotate(180deg)";
+    }
+}
+
 $(function() {
     (function(name) {
         var container = $('#pagination-' + name);
@@ -523,14 +545,16 @@ $(function() {
             callback: function (response, pagination) {
                 window.console && console.log(response, pagination);
 
-                var dataHtml = '<div class="board-info flex flex-col gap-3 mt-16">';
+                var dataHtml = '<div class="board-info flex flex-col gap-3 mt-8">';
 
                 $.each(response, function (index, item) {
                     dataHtml += `
-                                <div class="flex justify-between border-b border-[#385a54]">  
-                                    <p class="max-w-[675px] truncate"> ${item.title} </p>
-                                    <p> ${item.date} </p>
-                                </div>
+                                <a href="news-detail.html">
+                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                        <p class="max-w-[675px] truncate"> ${item.title} </p>
+                                        <p> ${item.date} </p>
+                                    </div>
+                                </a>
                                 `;
                 });
 
@@ -579,11 +603,12 @@ $(function() {
 
                 $.each(response, function (index, item) {
                     dataHtml += `
-                                <div class="flex justify-between border-b border-[#385a54] w-full">  
-                                    <p> ${item.title} </p>
-                                    <p> ${item.date} </p>
-                                    <div> ${item.content} </div>
-                                </div>
+                    <a href="news-detail.html">
+                    <div class="flex justify-between border-b border-[#385a54]">  
+                        <p class="max-w-[675px] truncate"> ${item.title} </p>
+                        <p> ${item.date} </p>
+                    </div>
+                </a>
                                 `;
                 });
 
@@ -631,10 +656,12 @@ $(function() {
 
                 $.each(response, function (index, item) {
                     dataHtml += `
-                                <div class="flex justify-between border-b border-[#385a54]">  
-                                    <p> ${item.title} </p>
-                                    <p> ${item.date} </p>
-                                </div>
+                    <a href="news-detail.html">
+                    <div class="flex justify-between border-b border-[#385a54]">  
+                        <p class="max-w-[675px] truncate"> ${item.title} </p>
+                        <p> ${item.date} </p>
+                    </div>
+                </a>
                                 `;
                 });
 
@@ -682,10 +709,12 @@ $(function() {
 
                 $.each(response, function (index, item) {
                     dataHtml += `
-                                <div class="flex justify-between border-b border-[#385a54]">  
-                                    <p> ${item.title} </p>
-                                    <p> ${item.date} </p>
-                                </div>
+                    <a href="news-detail.html">
+                    <div class="flex justify-between border-b border-[#385a54]">  
+                        <p class="max-w-[675px] truncate"> ${item.title} </p>
+                        <p> ${item.date} </p>
+                    </div>
+                </a>
                                 `;
                 });
 
@@ -716,105 +745,103 @@ $(function() {
             var result = [
                 {
                     id: 1,
-                    title: "Cập nhật phiên bản 14.5",
+                    title: "Huong Dan",
                     date: "22/06",
-                    dataId: "1",
                 },
                 {
                     id: 2,
-                    title: "Nâng cấp tính năng giao dịch, tăng cường bảo mật rương đồ",
-                    date: "16/06",
-                },
-                {
-                    id: 3,
-                    title: "Hướng dẫn nâng cấp trang bị thú cưng",
-                    date: "11/06",
-                },
-                {
-                    id: 4,
-                    title: 'Sự kiện "Ngày Hè Sôi Động"',
-                    date: "06/06",
-                },
-                {
-                    id: 5,
-                    title: "Mở tính năng đăng ký Bang Hội",
-                    date: "01/06",
-                },
-                {
-                    id: 6,
-                    title: 'Thông báo Gộp máy chủ S1 "Hoang Đế" và S2 "Hoàng..."',
-                    date: "01/06",
-                },
-                {
-                    id: 7,
-                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
-                    date: "31/05",
-                },
-                {
-                    id: 8,
-                    title: 'Mở phó bản mới "Đaị Liêu Kim Tướng"',
-                    date: "15/05",
-                },
-                {
-                    id: 9,
-                    title: 'Nâng cấp tính năng "Sư Đồ" Thêm kỹ năng, thêm v...',
-                    date: "06/05",
-                },
-                {
-                    id: 10,
-                    title: 'Mở phó bản mới "Khiêu Chiến Nhất Phẩm Đường"',
-                    date: "22/04",
+                    title: "Huong Dan",
+                    date: "22/06",
                 },
                 {
                     id: 1,
-                    title: "Cập nhật phiên bản 14.5",
+                    title: "Huong Dan",
                     date: "22/06",
-                    dataId: "1",
                 },
                 {
                     id: 2,
-                    title: "Nâng cấp tính năng giao dịch, tăng cường bảo mật rương đồ",
-                    date: "16/06",
+                    title: "Huong Dan",
+                    date: "22/06",
                 },
                 {
-                    id: 3,
-                    title: "Hướng dẫn nâng cấp trang bị thú cưng",
-                    date: "11/06",
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
                 },
                 {
-                    id: 4,
-                    title: 'Sự kiện "Ngày Hè Sôi Động"',
-                    date: "06/06",
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
                 },
                 {
-                    id: 5,
-                    title: "Mở tính năng đăng ký Bang Hội",
-                    date: "01/06",
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
                 },
                 {
-                    id: 6,
-                    title: 'Thông báo Gộp máy chủ S1 "Hoang Đế" và S2 "Hoàng..."',
-                    date: "01/06",
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
                 },
                 {
-                    id: 7,
-                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
-                    date: "31/05",
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
                 },
                 {
-                    id: 8,
-                    title: 'Mở phó bản mới "Đaị Liêu Kim Tướng"',
-                    date: "15/05",
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
                 },
                 {
-                    id: 9,
-                    title: 'Nâng cấp tính năng "Sư Đồ" Thêm kỹ năng, thêm v...',
-                    date: "06/05",
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
                 },
                 {
-                    id: 10,
-                    title: 'Mở phó bản mới "Khiêu Chiến Nhất Phẩm Đường"',
-                    date: "22/04",
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
                 },
             ];
 
@@ -827,14 +854,16 @@ $(function() {
             callback: function (response, pagination) {
                 window.console && console.log(response, pagination);
 
-                var dataHtml = '<div class="board-info flex flex-col gap-3 mt-6">';
+                var dataHtml = '<div class="board-info flex flex-col gap-3 mt-16">';
 
                 $.each(response, function (index, item) {
                     dataHtml += `
-                                <div class="flex justify-between border-b border-[#385a54] cursor-pointer">  
-                                    <p class="max-w-[675px] truncate" data-id="${item.dataId}"  id="test"> ${item.title} </p>
-                                    <p> ${item.date} </p>
-                                </div>
+                    <a href="news-detail.html">
+                    <div class="flex justify-between border-b border-[#385a54]">  
+                        <p class="max-w-[675px] truncate"> ${item.title} </p>
+                        <p> ${item.date} </p>
+                    </div>
+                </a>
                                 `;
                 });
 
@@ -855,10 +884,509 @@ $(function() {
             //return false
         });
     })('news');
-
-    $("#test").click(function() {
-        $(".carousel-cell").hide().filter(".news" + $(this).data('id')).show();
-        console.log($(this).data('id'));
-    });
 })
+$(function() {
+    (function(name) {
+        var container = $('#pagination-' + name);
+        if (!container.length) return;
+        var sources = function () {
+            var result = [
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+            ];
+
+            return result;
+        }();
+
+        var options = {
+            dataSource: sources,
+            pageSize: 20,
+            callback: function (response, pagination) {
+                window.console && console.log(response, pagination);
+
+                var dataHtml = '<div class="board-info flex flex-col gap-3 mt-16">';
+
+                $.each(response, function (index, item) {
+                    dataHtml += `
+                    <a href="news-detail.html">
+                    <div class="flex justify-between border-b border-[#385a54]">  
+                        <p class="max-w-[675px] truncate"> ${item.title} </p>
+                        <p> ${item.date} </p>
+                    </div>
+                </a>
+                                `;
+                });
+
+                dataHtml += '</div>';
+
+                container.prev().html(dataHtml);
+            }
+        };
+
+      //$.pagination(container, options);
+        container.addHook('beforeInit', function () {
+            window.console && console.log('beforeInit...');
+        });
+        container.pagination(options);
+
+        container.addHook('beforePageOnClick', function () {
+            window.console && console.log('beforePageOnClick...');
+            //return false
+        });
+    })('event');
+})
+$(function() {
+    (function(name) {
+        var container = $('#pagination-' + name);
+        if (!container.length) return;
+        var sources = function () {
+            var result = [
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+            ];
+
+            return result;
+        }();
+
+        var options = {
+            dataSource: sources,
+            pageSize: 20,
+            callback: function (response, pagination) {
+                window.console && console.log(response, pagination);
+
+                var dataHtml = '<div class="board-info flex flex-col gap-3 mt-16">';
+
+                $.each(response, function (index, item) {
+                    dataHtml += `
+                    <a href="news-detail.html">
+                    <div class="flex justify-between border-b border-[#385a54]">  
+                        <p class="max-w-[675px] truncate"> ${item.title} </p>
+                        <p> ${item.date} </p>
+                    </div>
+                </a>
+                                `;
+                });
+
+                dataHtml += '</div>';
+
+                container.prev().html(dataHtml);
+            }
+        };
+
+      //$.pagination(container, options);
+        container.addHook('beforeInit', function () {
+            window.console && console.log('beforeInit...');
+        });
+        container.pagination(options);
+
+        container.addHook('beforePageOnClick', function () {
+            window.console && console.log('beforePageOnClick...');
+            //return false
+        });
+    })('feature');
+})
+$(function() {
+    (function(name) {
+        var container = $('#pagination-' + name);
+        if (!container.length) return;
+        var sources = function () {
+            var result = [
+                {
+                    id: 1,
+                    title: "a",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 1,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+                {
+                    id: 2,
+                    title: "Huong Dan",
+                    date: "22/06",
+                },
+            ];
+
+            return result;
+        }();
+
+        var options = {
+            dataSource: sources,
+            pageSize: 20,
+            callback: function (response, pagination) {
+                window.console && console.log(response, pagination);
+
+                var dataHtml = '<div class="board-info flex flex-col gap-3 mt-16">';
+
+                $.each(response, function (index, item) {
+                    dataHtml += `
+                    <a href="news-detail.html">
+                    <div class="flex justify-between border-b border-[#385a54]">  
+                        <p class="max-w-[675px] truncate"> ${item.title} </p>
+                        <p> ${item.date} </p>
+                    </div>
+                </a>
+                                `;
+                });
+
+                dataHtml += '</div>';
+
+                container.prev().html(dataHtml);
+            }
+        };
+
+      //$.pagination(container, options);
+        container.addHook('beforeInit', function () {
+            window.console && console.log('beforeInit...');
+        });
+        container.pagination(options);
+
+        container.addHook('beforePageOnClick', function () {
+            window.console && console.log('beforePageOnClick...');
+            //return false
+        });
+    })('instruct');
+})
+
+$(document).ready(function(){
+    $('#btn-1 h6').hover(function(){
+        $('#btn-img-1').css('visibility', 'visible');
+    })
+    $('#btn-1').mouseout(function(){
+        $("#btn-img-1").css('visibility', 'hidden');
+    })
+
+    $('#btn-2 h6').hover(function(){
+        $('#btn-img-2').css('visibility', 'visible');
+    })
+    $('#btn-2').mouseout(function(){
+        $("#btn-img-2").css('visibility', 'hidden');
+    })
+
+    $('#btn-3 h6').hover(function(){
+        $('#btn-img-3').css('visibility', 'visible');
+    })
+    $('#btn-3').mouseout(function(){
+        $("#btn-img-3").css('visibility', 'hidden');
+    })
+
+    $('#btn-4 h6').hover(function(){
+        $('#btn-img-4').css('visibility', 'visible');
+    })
+    $('#btn-4').mouseout(function(){
+        $("#btn-img-4").css('visibility', 'hidden');
+    })
+});
+
+$(document).ready(function(){
+    $('#news-btn-1 h6').hover(function(){
+        $('#news-btn-img-1').css('visibility', 'visible');
+    })
+    $('#news-btn-1').mouseout(function(){
+        $("#news-btn-img-1").css('visibility', 'hidden');
+    })
+
+    $('#news-btn-2 h6').hover(function(){
+        $('#news-btn-img-2').css('visibility', 'visible');
+    })
+    $('#news-btn-2').mouseout(function(){
+        $("#news-btn-img-2").css('visibility', 'hidden');
+    })
+
+    $('#news-btn-3 h6').hover(function(){
+        $('#news-btn-img-3').css('visibility', 'visible');
+    })
+    $('#news-btn-3').mouseout(function(){
+        $("#news-btn-img-3").css('visibility', 'hidden');
+    })
+
+    $('#news-btn-4 h6').hover(function(){
+        $('#news-btn-img-4').css('visibility', 'visible');
+    })
+    $('#news-btn-4').mouseout(function(){
+        $("#news-btn-img-4").css('visibility', 'hidden');
+    })
+});
 

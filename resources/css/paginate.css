@@ -11,7 +11,7 @@ ul, li {
     display: flex;
     line-height: 1.6;
     font-family: 'Maitree', serif;
-    font-size: 20px;
+    font-size: 1.8vw;
     box-sizing: initial;
     justify-content: center;
     margin-top: 25px;
@@ -26,15 +26,14 @@ ul, li {
     border: 2px solid #385a54;
     list-style: none;
     border-radius: 3px;
-    margin-left: 20px;
+    margin-left: 1vw;
 }
 .paginationjs .paginationjs-pages li > a {
-    min-width: 40px;
-    height: 36px;
-    line-height: 35px;
+    width: 2.8vw;
+    height: 2.7vw;
     font-weight: 600;
     display: block;
-    font-size: 25px;
+    font-size: 1.8vw;
     color: #385a54;
     text-decoration: none;
     text-align: center;
@@ -57,7 +56,7 @@ ul, li {
     background: #fff;
     border-radius: 3px;
     padding: 0;
-    font-size: 14px;
+    font-size: 1.5vw;
     text-align: center;
     vertical-align: baseline;
     outline: 0;
@@ -68,8 +67,11 @@ ul, li {
     float: left;
     height: 30px;
     line-height: 30px;
-    font-size: 14px;
+    font-size: 1.5vw;
 }
 .paginationjs>:first-child {
     margin-left: 0;
+}
+.paginationjs-prev a {
+    width: 10%;
 }

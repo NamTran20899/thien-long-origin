@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/paginate.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&family=Maitree:wght@600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    
+    <title>News</title>
+</head>
+<body class="grid">
+    <div id="mySidenav" class="sidenav">
+        <a class="" onclick="openNav()">
+            <img src="./resources/images/btn-side-nav.png" alt="" id="close-open">
+        </a>
+        <img src="./resources/images/logo-mobi.png" alt="" class="side-logo">
+
+        <img src="./resources/images/recharge.png" alt="" class="side-btn">
+        <img src="./resources/images/btn3-mobi.png" alt="" class="side-btn">
+        <img src="../resources/images/btn1-mobi.png" alt="" class="side-btn">
+        <img src="./resources/images/btn2-mobi.png" alt="" class="side-btn">
+        <img src="./resources/images/btn3-mobi.png" alt="" class="side-btn">
+    </div>
+    <!-- Header -->
+    <header>
+        <!-- NavBar -->
+        <nav class="navbar">
+            <!-- Navbar-Mobi -->
+            <img src="./resources/images/logo-mobi.png" alt="" id="logo-mobi">
+            <div class="mobi-btn gap-8 ml-4">
+                <img src="./resources/images/dowload-mobi.png" alt="" class="button">
+                <img src="./resources/images/register-mobi.png" alt="" class="button">
+            </div>
+
+            <a class="hamburger-btn" onclick="hamburgerBtn()">
+                <img src="./resources/images/hamburger-btn.svg" alt="">
+            </a>
+            <div class="hamburger-menu" id="hamburger">
+                <ul>
+                    <li>
+                        <a href="#" class="">Đăng nhập/Đăng ký</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Hướng dẫn tân thủ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Giftcode</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Nạp thẻ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Báo lỗi</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">1900 988961</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Navbar -->
+            <div class="header-left">
+                <a href="index.html" class="">Trang chủ</a>
+                <a href="tin-tuc.html" class="">Tin tức</a>
+                <a href="#" class="">Đăng ký tài khoản</a>
+            </div>
+            <img src="./resources/images/logo.png" alt="logo" id="logo"/>
+            <div class="header-right">
+                <a href="#" class="">Nạp tiền</a>
+                <a href="#" class="">Hướng dẫn</a>
+                <a href="#" class="">1900 988961</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Content -->
+    <main class="mt-[45%]">
+        <div id="news-title">
+            <img src="./resources/images/title-news.png" alt="">
+        </div>
+
+        <div class="flex justify-center mt-5">
+            <div class="justify-self-center ml-12 mr-12 w-4/5" id="news-detail-page">
+                <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</h1>
+                <p>Trang chủ > Tin tức</p>
+                <img src="./resources/images/slide_mobile.jpg" alt="">
+                <p>Nội dung được thêm vào tự động</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative flex mt-[50%]">
+        <div class="footer-pc">
+            <img src="./resources/images/block18.png" alt="" id="block18">
+            <img src="./resources/images/logo.png" alt="" id="footer-logo">
+            <img src="./resources/images/Artboard.png" alt="" id="artboard">
+            <div class="flex w-full justify-center ">
+                <p>
+                    Phát hành bởi Efun Corp
+                    <br> Hotline: 1900 988961
+                    <br> Email: support@efun.vn
+                    <br> Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
+                    <br> Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
+                    <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-mobi grid justify-items-center">
+            <img src="./resources/images/logo.png" alt="" id="footer-logo-mobi">
+            <img src="./resources/images/block18.png" alt="" id="footer-block18-mobi">
+            <div class="flex w-full justify-center ">
+                <p>
+                    Phát hành bởi Efun Corp
+                    <br> Hotline: 1900 988961
+                    <br> Email: support@efun.vn
+                    <br> Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
+                    <br> Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
+                    <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pagination -->
+    <script src="./resources/js/paginate.js"></script>
+    <script src="./resources/js/main.js"></script>
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./resources/js/flickyti.js"></script>
+
+</body>
+</html>
