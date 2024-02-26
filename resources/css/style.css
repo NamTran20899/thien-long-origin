@@ -115,6 +115,9 @@ main {
     margin-top: 8%;
     width: 100%;
 }
+.btn-left-group button p:hover {
+    color: #f1f3b5;
+}
 /*-- News --*/
 .board-select {
     background-image: url(../images/new_board.png);
