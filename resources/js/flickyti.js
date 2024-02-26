@@ -22,9 +22,9 @@ $('.carousel').flickity({
     freeScroll: true,
     prevNextButtons: false,
     draggable: true,
-    pageDots: false,
+    pageDots: true,
     wrapAround: true,
-    autoPlay: 1500,
+    autoPlay: false,
 });
 var $carousel = $('.carousel').flickity();
 $('.sect-button-group').on( 'click', '.sect-button', function() {
