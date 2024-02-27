@@ -21,10 +21,10 @@ $('.carousel').flickity({
     cellAlign: 'center',
     freeScroll: true,
     prevNextButtons: false,
-    draggable: true,
+    draggable: false,
     pageDots: true,
     wrapAround: true,
-    autoPlay: false,
+    autoPlay: 1500,
 });
 var $carousel = $('.carousel').flickity();
 $('.sect-button-group').on( 'click', '.sect-button', function() {
@@ -32,17 +32,3 @@ $('.sect-button-group').on( 'click', '.sect-button', function() {
     $carousel.flickity( 'select', index );
 });
 
-//
-$('.carousel-main').flickity({
-    cellAlign: 'center',
-    freeScroll: true,
-    prevNextButtons: false,
-    draggable: false,
-    pageDots: false,
-    wrapAround: true,
-});
-var $carouselBtn = $('.carousel-main').flickity();
-$('.board-btn-group').on('click', '.board-button', function() {
-    var index = $(this).index();
-    $carouselBtn.flickity( 'select', index );
-});
