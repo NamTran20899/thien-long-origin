@@ -39,7 +39,7 @@ $('.news-carousel').flickity({
 $('.carousel').flickity({
     cellAlign: 'center',
     freeScroll: true,
-    prevNextButtons: false,
+    prevNextButtons: true,
     draggable: false,
     pageDots: true,
     wrapAround: true,
