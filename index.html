@@ -36,7 +36,7 @@
         <!-- Header -->
         <header>
             <!-- NavBar -->
-            <nav class="navbar">
+            <nav class="navbar overflow-hidden">
                 <!-- Navbar-Mobi -->
                 <img src="./resources/images/logo-mobi.png" alt="" id="logo-mobi">
                 <div class="mobi-btn">
@@ -83,11 +83,15 @@
                     <a href="#" class="">1900 988961</a>
                 </div>
             </nav>
+
+            <div class="bg-header"></div> 
         </header>
         <!-- Content -->
-        <main class="mt-[45%]">
-            <!-- Banner -->
-            <div class="banner">
+        <main class="main">
+            <div class="bg-content">
+                <div class="container-content">
+                    <!-- Banner -->
+                        <div class="banner">
                 <div class="flex gap-4">
                     <div class="gap-4">
                         <div class="dowload-btn">
@@ -186,9 +190,9 @@
                         <img class="game-img" src="./resources/images/Layer.png" alt="">
                     </div>
                 </div>
-            </div>
-            <!-- Banner-Mobi -->
-            <div class="banner-mobi justify-center items-center">
+                        </div>
+                    <!-- Banner-Mobi -->
+                    <div class="banner-mobi justify-center items-center">
                 <div class="banner-mobi-container">
                     <div class="banner-1">
                         <img class="w-full button" src="./resources/images/logo-mobi.png" alt="">
@@ -204,13 +208,11 @@
                         <img class="w-[95%] button" src="./resources/images/btn3-mobi.png" alt="">
                     </div>
                 </div>
-            </div>
-            <!-- Banner-Mobi -->
-    
-            <!-- News -->
-            <div id="news" class="mt-[5vw]">
+                    </div>
+                    <!-- News -->
+                    <div id="news" class="mt-[3vw]">
                 <!-- News Title -->
-                <div class="" id="news-title">
+                <div class="mb-[2vw]" id="news-title">
                     <img src="./resources/images/title-news.png" alt="">
                 </div>
     
@@ -218,7 +220,7 @@
                 <div class="news-board relative">
                     <div class="board-select flex-col top-[5%] right-[5%]">
                         <!-- Board Head -->
-                        <div class="flex justify-between mt-4 board-btn-group" id="news-head-mobi">
+                        <div class="news-button-group flex justify-between mt-4 board-btn-group" id="news-head-mobi">
                             <button class="board-button" id="btn-1">
                                 <h6>TIN TỨC</h6>
                                 <img src="./resources/images/Component.svg" alt="" id="btn-img-1">
@@ -257,74 +259,127 @@
                                     <img src="./resources/images/slide_mobile.jpg" alt="" />
                                 </div>
                             </div>
-                            <div id="tin-tuc">
-                                <section>
-                                    <div id="pagination-tintuc">
-                                        <div class="board-info flex flex-col gap-3 mt-8">
-                                            <a href="news-detail.html">
-                                                <div class="flex justify-between border-b border-[#385a54]">  
-                                                    <p class="max-w-[675px] truncate"> Cập nhật phiên bản 14.5 </p>
-                                                    <p> 22/06 </p>
+                            <div class="news-board-carousel">
+                                <div class="carousel-cell">
+                                    <div id="tin-tuc">
+                                        <section>
+                                            <div id="pagination-tintuc">
+                                                <div class="board-info flex flex-col gap-3 mt-8">
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Cập nhật phiên bản 14.5 </p>
+                                                            <p> 22/06 </p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Nâng cấp tính năng giao dịch, tăng cường bảo mật rương đồ </p>
+                                                            <p> 16/06 </p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Hướng dẫn nâng cấp trang bị thú cưng </p>
+                                                            <p> 11/06 </p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Sự kiện "Ngày Hè Sôi Động" </p>
+                                                            <p> 06/06 </p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Mở tính năng đăng ký Bang Hội </p>
+                                                            <p> 01/06 </p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Máy chủ mới S99 "Thiên Nam Môn" </p>
+                                                            <p> 31/05 </p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Mở phó bản mới "Đaị Liêu Kim Tướng" </p>
+                                                            <p> 15/05 </p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Nâng cấp tính năng "Sư Đồ" Thêm kỹ năng, thêm v... </p>
+                                                            <p> 06/05 </p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Mở phó bản mới "Khiêu Chiến Nhất Phẩm Đường" </p>
+                                                            <p> 22/04 </p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Thông báo Gộp máy chủ S1 "Hoang Đế" và S2 "Hoàng..." </p>
+                                                            <p> 10/04 </p>
+                                                        </div>
+                                                    </a>
                                                 </div>
-                                            </a>
-                                            <a href="news-detail.html">
-                                                <div class="flex justify-between border-b border-[#385a54]">  
-                                                    <p class="max-w-[675px] truncate"> Nâng cấp tính năng giao dịch, tăng cường bảo mật rương đồ </p>
-                                                    <p> 16/06 </p>
-                                                </div>
-                                            </a>
-                                            <a href="news-detail.html">
-                                                <div class="flex justify-between border-b border-[#385a54]">  
-                                                    <p class="max-w-[675px] truncate"> Hướng dẫn nâng cấp trang bị thú cưng </p>
-                                                    <p> 11/06 </p>
-                                                </div>
-                                            </a>
-                                            <a href="news-detail.html">
-                                                <div class="flex justify-between border-b border-[#385a54]">  
-                                                    <p class="max-w-[675px] truncate"> Sự kiện "Ngày Hè Sôi Động" </p>
-                                                    <p> 06/06 </p>
-                                                </div>
-                                            </a>
-                                            <a href="news-detail.html">
-                                                <div class="flex justify-between border-b border-[#385a54]">  
-                                                    <p class="max-w-[675px] truncate"> Mở tính năng đăng ký Bang Hội </p>
-                                                    <p> 01/06 </p>
-                                                </div>
-                                            </a>
-                                            <a href="news-detail.html">
-                                                <div class="flex justify-between border-b border-[#385a54]">  
-                                                    <p class="max-w-[675px] truncate"> Máy chủ mới S99 "Thiên Nam Môn" </p>
-                                                    <p> 31/05 </p>
-                                                </div>
-                                            </a>
-                                            <a href="news-detail.html">
-                                                <div class="flex justify-between border-b border-[#385a54]">  
-                                                    <p class="max-w-[675px] truncate"> Mở phó bản mới "Đaị Liêu Kim Tướng" </p>
-                                                    <p> 15/05 </p>
-                                                </div>
-                                            </a>
-                                            <a href="news-detail.html">
-                                                <div class="flex justify-between border-b border-[#385a54]">  
-                                                    <p class="max-w-[675px] truncate"> Nâng cấp tính năng "Sư Đồ" Thêm kỹ năng, thêm v... </p>
-                                                    <p> 06/05 </p>
-                                                </div>
-                                            </a>
-                                            <a href="news-detail.html">
-                                                <div class="flex justify-between border-b border-[#385a54]">  
-                                                    <p class="max-w-[675px] truncate"> Mở phó bản mới "Khiêu Chiến Nhất Phẩm Đường" </p>
-                                                    <p> 22/04 </p>
-                                                </div>
-                                            </a>
-                                            <a href="news-detail.html">
-                                                <div class="flex justify-between border-b border-[#385a54]">  
-                                                    <p class="max-w-[675px] truncate"> Thông báo Gộp máy chủ S1 "Hoang Đế" và S2 "Hoàng..." </p>
-                                                    <p> 10/04 </p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                            </div>
+                                        </section>
                                     </div>
-                                </section>
+                                </div>
+                                <div class="carousel-cell">
+                                    <div id="su-kien">
+                                        <section>
+                                            <div id="pagination-sukien">
+                                                <div class="board-info flex flex-col gap-3 mt-8">
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Sự kiện </p>
+                                                            <p> 22/06 </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="carousel-cell">
+                                    <div id="tinh-nang">
+                                        <section>
+                                            <div id="pagination-tinhnang">
+                                                <div class="board-info flex flex-col gap-3 mt-8">
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Tính năng </p>
+                                                            <p> 10/04 </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="carousel-cell">
+                                    <div id="huong-dan">
+                                        <section>
+                                            <div id="pagination-huongdan">
+                                                <div class="board-info flex flex-col gap-3 mt-8">
+                                                    <a href="news-detail.html">
+                                                        <div class="flex justify-between border-b border-[#385a54]">  
+                                                            <p class="max-w-[675px] truncate"> Hướng dẫn </p>
+                                                            <p> 10/04 </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
                             </div>
+                            
                             <div class="paginationjs">
                                 <div class="paginationjs-pages">
                                     <ul>
@@ -359,12 +414,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-    
-            <!-- Sect -->
-            <div id="sect" class="mt-[5vw]">
+                    </div>
+                    <!-- Sect -->
+                    <div id="sect" class="mt-[3vw]">
                 <!-- Sect-Title -->
-                <div class="" id="news-title">
+                <div class="mb-[2vw]" id="news-title">
                     <img src="./resources/images/title-news.png" alt="">
                 </div>
     
@@ -464,48 +518,51 @@
                     </button>
                 </div>
                 
+                    </div>
+                </div>
+                <!-- Footer -->
+                <footer class="relative flex">
+                <div class="footer-pc">
+                    <img src="./resources/images/block18.png" alt="" id="block18">
+                    <img src="./resources/images/logo.png" alt="" id="footer-logo">
+                    <img src="./resources/images/Artboard.png" alt="" id="artboard">
+                    <div class="flex w-full justify-center ">
+                        <p>
+                            Phát hành bởi Efun Corp
+                            <br> Hotline: 1900 988961
+                            <br> Email: support@efun.vn
+                            <br> Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
+                            <br> Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
+                            <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="footer-mobi grid justify-items-center">
+                    <img src="./resources/images/logo.png" alt="" id="footer-logo-mobi">
+                    <img src="./resources/images/block18.png" alt="" id="footer-block18-mobi">
+                    <div class="flex w-full justify-center ">
+                        <p>
+                            Phát hành bởi Efun Corp
+                            <br> Hotline: 1900 988961
+                            <br> Email: support@efun.vn
+                            <br> Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
+                            <br> Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
+                            <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
+                        </p>
+                    </div>
+                </div>
+                </footer>
             </div>
         </main>
         <!-- Footer -->
-        <footer class="relative flex mt-[50%]">
-            <div class="footer-pc">
-                <img src="./resources/images/block18.png" alt="" id="block18">
-                <img src="./resources/images/logo.png" alt="" id="footer-logo">
-                <img src="./resources/images/Artboard.png" alt="" id="artboard">
-                <div class="flex w-full justify-center ">
-                    <p>
-                        Phát hành bởi Efun Corp
-                        <br> Hotline: 1900 988961
-                        <br> Email: support@efun.vn
-                        <br> Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
-                        <br> Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
-                        <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="footer-mobi grid justify-items-center">
-                <img src="./resources/images/logo.png" alt="" id="footer-logo-mobi">
-                <img src="./resources/images/block18.png" alt="" id="footer-block18-mobi">
-                <div class="flex w-full justify-center ">
-                    <p>
-                        Phát hành bởi Efun Corp
-                        <br> Hotline: 1900 988961
-                        <br> Email: support@efun.vn
-                        <br> Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
-                        <br> Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
-                        <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
-                    </p>
-                </div>
-            </div>
-        </footer>
+        
     </div>
 
     <!-- Flickity -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./resources/js/flickyti.js"></script>
     <!-- Pagination -->
-    <script src="./resources/js/paginate.js"></script>
     <script src="./resources/js/main.js"></script>
 </body>
 </html>

@@ -1,13 +1,12 @@
 function hamburgerBtn() {
-    const menuWidth = document.getElementById("hamburger").style.transform;
+    const menuWidth = document.getElementById("hamburger").style.display;
 
-    if (menuWidth == "translateX(100%)") {
-        document.getElementById("hamburger").style.display = "block";
-        document.getElementById("hamburger").style.transform = "translateX(0%)";
-        
-    } else {
+    if (menuWidth == "block") {
         document.getElementById("hamburger").style.display = "none";
-        document.getElementById("hamburger").style.transform = "translateX(100%)";   
+        document.getElementById("hamburger").style.transform = "translateX(100%)";
+    } else {
+        document.getElementById("hamburger").style.display = "block";
+        document.getElementById("hamburger").style.transform = "translateX(0%)";   
     }
 }
 

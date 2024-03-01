@@ -5,15 +5,22 @@
     margin: 0;
 }
 #content {
-    background-image: url("../images/bg.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% 100%;
-    object-fit: cover;
     justify-content: center;
     align-items: center;
     align-content: center;
     justify-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+header {
+    background: url("../images/bg_header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 46.2vw;
+    width: 100%;
+    z-index: 2;
+    object-fit: cover;
 }
 .button {
     cursor: pointer;
@@ -32,10 +39,11 @@
     padding-left: 2%;
     padding-right: 2%;
     left: 0;
+    max-height: 120px;
 }
 .navbar a {
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     transform: translateX(0);
@@ -45,6 +53,9 @@
     justify-content: center;
     gap: 15%;
     width: 100%;
+}
+#logo {
+    width: 28%;
 }
 .header-left a:hover,
 .header-right a:hover {
@@ -61,12 +72,23 @@
     width: 100%;
 }
 /*-- Content --*/
-main {
+.main {
+    width: 100vw;
+}
+.bg-content {
+    background: url(../images/bg_content.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100vw 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
+}
+.container-content {
+    
     max-width: 1150px;
 }
 /*-- Button-Group --*/
@@ -113,13 +135,53 @@ main {
     justify-self: flex-end;
 }
 .game-img {
-    margin-top: 8%;
+    margin-top: 7%;
     width: 100%;
+    height: 197px;
 }
 .btn-left-group button p:hover {
     color: #f1f3b5;
 }
 /*-- News --*/
+.paginationjs {
+    display: flex;
+    line-height: 1.6;
+    font-family: 'Maitree', serif;
+    font-size: 30px;
+    box-sizing: initial;
+    justify-content: center;
+    margin-top: 25px;
+}
+.paginationjs:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+.paginationjs .paginationjs-pages li {
+    float: left;
+    border: 1.5px solid #385a54;
+    list-style: none;
+    border-radius: 3px;
+    margin-left: 1vw;
+}
+.paginationjs .paginationjs-pages li > p {
+    width: 45px;
+    height: 45px;
+    font-weight: 500;
+    display: block;
+    font-size: 30px;
+    color: #385a54;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.paginationjs .paginationjs-pages li > p:hover {
+    color: white;
+    background: #385a54;
+}
+.paginationjs .paginationjs-pages li > p {
+    cursor: pointer;
+}
 .board-select {
     background-image: url(../images/new_board.png);
     background-size: 100% 100%;
@@ -131,16 +193,16 @@ main {
 }
 .board-select h6 {
     font-family: 'Maitree', serif;
-    font-weight: 600;
-    font-size: 1.8vw;
+    font-weight: 800;
+    font-size: 30px;
     color: #385a54;
     text-transform: uppercase;
     text-align: center;
 }
 .board-info p {
-    font-family: 'Maitree', serif !important;
+    font-family: 'Maitree', serif;
     font-weight: 600;
-    font-size: 1.8vw !important;
+    font-size: 25px;
     color: #385a54;
     cursor: pointer;
 }
@@ -149,11 +211,14 @@ main {
     transition: 80ms;
 }
 .board-button {
-    padding-top: 10px;
+    padding-top: 1.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.board-button img {
+    width: 12vw;
 }
 #news-head-page button img,
 .news-board button img {
@@ -171,47 +236,9 @@ main {
     width: 100%;
     justify-content: center;
 }
-#img-1 {
-    width: 80vw;
-}
-#img-2 {
-    width: 79.8vw;
-}
-#img-3 {
-    width: 76.3vw;
-}
-#img-4 {
-    width: 66.4vw;
-}
-#img-5 {
-    width: 66.4vw;
-}
-#img-6 {
-    width: 77.2vw;
-}
-#img-7 {
-    width: 70.3vw;
-}
-#img-8 {
-    width: 76vw;
-}
-#img-9 {
-    width: 72.9vw;
-}
-#img-10 {
-    width: 68.4vw;
-}
-#img-11 {
-    width: 71.6vw;
-}
-#img-12 {
-    width: 69.1vw;
-}
-#img-13 {
-    width: 68.2vw;
-}
-#img-14 {
-    width: 71.3vw;
+#sect .carousel .carousel-cell img {
+    width: 1000px;
+    height: 450px;
 }
 #line {
     bottom: -15px;
@@ -341,11 +368,15 @@ main {
     color: #385a54;
 }
 /*-- Footer --*/
+footer {
+    max-width: 85vw;
+    margin-top: 30vw;
+}
 footer p {
     font-family: 'Cabin Condensed', sans-serif;
     color: white;
     text-align: center;
-    font-size: 1.8vw;
+    font-size: 30px;
 }
 #block18 {
     position: absolute;
@@ -417,8 +448,8 @@ footer p {
     top: 10vw;
     right: 0;
     background: rgb(0, 0, 0, 0.5);
-    transition: 0.25s;
-    transform: translateX(100%);
+    transition: 0.5s;
+    overflow: auto;
     display: none;
 }
 .hamburger-menu ul {
@@ -534,6 +565,7 @@ footer p {
     margin-top: 1.5%;
 }
 #news-detail-page img {
+    width: 100%;
     margin-top: 5%;
 }
 #news-detail-page span {
@@ -549,12 +581,17 @@ footer p {
 #footer-logo-mobi {
     width: 23vw;
     position: absolute;
-    top: -30%;
+    top: -25%;
 }
 #footer-block18-mobi {
     width: 16vw;
 }
 /*-- Responsive --*/
+@media screen and (max-width: 1440px) {
+    footer p {
+        font-size: 22px;
+    }
+}
 @media screen and (max-width: 1150px) {
     .navbar {
         height: 10vw;
@@ -625,10 +662,80 @@ footer p {
     #sect .flickity-page-dots {
         display: none;
     }
+    #img-1 {
+        width: 80vw !important;
+        height: auto !important;
+    }
+    #img-2 {
+        width: 79.8vw !important;
+        height: auto !important;
+    }
+    #img-3 {
+        width: 76.3vw !important;
+        height: auto !important;
+    }
+    #img-4 {
+        width: 66.4vw !important;
+        height: auto !important;
+    }
+    #img-5 {
+        width: 66.4vw !important;
+        height: auto !important;
+    }
+    #img-6 {
+        width: 77.2vw !important;
+        height: auto !important;
+    }
+    #img-7 {
+        width: 70.3vw !important;
+        height: auto !important;
+    }
+    #img-8 {
+        width: 76vw !important;
+        height: auto !important;
+    }
+    #img-9 {
+        width: 72.9vw !important;
+        height: auto !important;
+    }
+    #img-10 {
+        width: 68.4vw !important;
+        height: auto !important;
+    }
+    #img-11 {
+        width: 71.6vw !important;
+        height: auto !important;
+    }
+    #img-12 {
+        width: 69.1vw !important;
+        height: auto !important;
+    }
+    #img-13 {
+        width: 68.2vw !important;
+        height: auto !important;
+    }
+    #img-14 {
+        width: 71.3vw !important;
+        height: auto !important;
+    }
+    footer p {
+        font-size: 1.8vw;
+    }
 }
 @media screen and (max-width: 950px) {
     .news-btn-page {
         display: none;
+    }
+    .board-select h6 {
+        font-size: 2vw;
+    }
+    .board-info p {
+        font-size: 2.5vw;
+    }
+    .paginationjs .paginationjs-pages li > p {
+        width: 3.5vw !important;
+        height: 3.5vw !important;
+        font-size: 2.5vw !important;
     }
 }
 @media screen and (max-width: 850px) {
@@ -639,43 +746,24 @@ footer p {
         display: none;
     }
 }
-
-.paginationjs {
-    display: flex;
-    line-height: 1.6;
-    font-family: 'Maitree', serif;
-    font-size: 1.8vw;
-    box-sizing: initial;
-    justify-content: center;
-    margin-top: 25px;
-}
-.paginationjs:after {
-    display: table;
-    content: " ";
-    clear: both;
-}
-.paginationjs .paginationjs-pages li {
-    float: left;
-    border: 2px solid #385a54;
-    list-style: none;
-    border-radius: 3px;
-    margin-left: 1vw;
-}
-.paginationjs .paginationjs-pages li > p {
-    width: 2.8vw;
-    height: 2.7vw;
-    font-weight: 600;
-    display: block;
-    font-size: 1.8vw;
-    color: #385a54;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-}
-.paginationjs .paginationjs-pages li > p:hover {
-    color: white;
-    background: #385a54;
-}
-.paginationjs .paginationjs-pages li > p {
-    cursor: pointer;
+@media screen and (max-width: 450px) {
+    .paginationjs {
+        margin-top: 2vw;
+    }
+    .board-select h6 {
+        padding-top: 0;
+    }
+    #news-mobi .flickity-page-dots .dot.is-selected {
+        background-size: 0.45rem 0.45rem 
+    }
+    #news-mobi .flickity-page-dots .dot {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    #news-mobi .flickity-page-dots .dot {
+        margin: 0 5px;
+    }
+    .board-info {
+        margin-top: 1rem !important;
+    }
 }
