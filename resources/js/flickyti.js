@@ -16,7 +16,7 @@ $('.news-board-carousel').flickity({
     draggable: false,
     pageDots: false,
     wrapAround: true,
-    autoPlay: 1500,
+    autoPlay: false,
 });
 var $newsBoardCarousel = $('.news-board-carousel').flickity();
 $('.news-button-group').on( 'click', '.board-button', function() {
@@ -32,7 +32,7 @@ $('.news-carousel').flickity({
     prevNextButtons: false,
     draggable: false,
     wrapAround: true,
-    autoPlay: false,
+    autoPlay: 1500,
 });
 
 //sect
