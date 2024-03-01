@@ -4,6 +4,9 @@
     box-sizing: border-box;
     margin: 0;
 }
+body {
+    overflow-x: hidden;
+}
 #content {
     justify-content: center;
     align-items: center;
@@ -522,16 +525,19 @@ footer p {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 10vw;
+    height: 7vw;
     justify-content: space-around;
 }
 #news-head-page h6 {
     font-family: 'Maitree', serif;
     font-weight: 600;
-    font-size: 1.5vw;
+    font-size: 25px;
     color: #385a54;
     text-transform: uppercase;
     text-align: center;
+}
+#news .news-btn-page p {
+    font-size: 13px;
 }
 #news-board-page {
     background-image: url(../images/Rectangle.png);
@@ -540,38 +546,41 @@ footer p {
     padding: 0 5% 3% 5%;
     margin-top: 5%;
 }
-#news-detail-page {
+#news-board-page #tin-tuc p {
+    font-size: 22px;
+}
+#news-detail-board-page {
     background-image: url(../images/Rectangle.png);
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 3% 5% 3% 5%;
     min-height: 150vw;
 }
-#news-detail-page h1 {
+#news-detail-board-page h1 {
     font-family: 'Maitree', serif;
     font-weight: 600;
-    font-size: 2vw;
+    font-size: 25px;
     color: #385a54;
     text-transform: uppercase;
     text-align: left;
     border-bottom: 1.5px solid #385a54;
 }
-#news-detail-page p {
+#news-detail-board-page p {
     font-family: 'Maitree', serif;
     font-weight: 600;
-    font-size: 1.3vw;
+    font-size: 20px;
     color: #385a54;
     text-align: left;
     margin-top: 1.5%;
 }
-#news-detail-page img {
+#news-detail-board-page img {
     width: 100%;
     margin-top: 5%;
 }
-#news-detail-page span {
+#news-detail-board-page span {
     font-family: 'Maitree', serif;
     font-weight: 600;
-    font-size: 1.3vw;
+    font-size: 20px;
     color: #385a54;
     text-align: left;
 }
@@ -593,6 +602,12 @@ footer p {
     }
 }
 @media screen and (max-width: 1150px) {
+    #news-head-page h6 {
+        font-size: 20px;
+    }
+    #news-head-page {
+        height: 9vw;
+    }
     .navbar {
         height: 10vw;
     }
@@ -737,6 +752,18 @@ footer p {
         height: 3.5vw !important;
         font-size: 2.5vw !important;
     }
+    #news-board-page #tin-tuc p {
+        font-size: 20px;
+    }
+    #news-detail-board-page h1 {
+        font-size: 22px;
+    }
+    #news-detail-board-page p {
+        font-size: 18px;
+    }
+    #news-detail-board-page span {
+        font-size: 18px;
+    }
 }
 @media screen and (max-width: 850px) {
     .footer-mobi {
@@ -744,6 +771,40 @@ footer p {
     }
     .footer-pc {
         display: none;
+    }
+    #news-head-page h6 {
+        font-size: 15px;
+    }
+    #news-board-page #tin-tuc p {
+        font-size: 2.5vw;
+    }
+}
+@media screen and (max-width: 650px) {
+    #news-detail-board-page h1 {
+        font-size: 20px;
+    }
+    #news-detail-board-page p {
+        font-size: 16px;
+    }
+    #news-detail-board-page span {
+        font-size: 16px;
+    }
+    .hamburger-menu ul li a {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    #news-detail-board-page h1 {
+        font-size: 18px;
+    }
+    #news-detail-board-page p {
+        font-size: 14px;
+    }
+    #news-detail-board-page span {
+        font-size: 14px;
+    }
+    #news-detail-board-page {
+        min-height: 160vw;
     }
 }
 @media screen and (max-width: 450px) {
@@ -765,5 +826,48 @@ footer p {
     }
     .board-info {
         margin-top: 1rem !important;
+    }
+    #news-head-page h6 {
+        font-size: 2.5vw;
+    }
+    #news-detail-board-page h1 {
+        font-size: 16px;
+    }
+    #news-detail-board-page p {
+        font-size: 12px;
+    }
+    #news-detail-board-page span {
+        font-size: 12px;
+    }
+    #news-detail-board-page {
+        min-height: 200vw;
+    }
+    .hamburger-btn img {
+        width: 70%;
+    }
+    .hamburger-menu ul li a {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 350px) {
+    #news-detail-board-page h1 {
+        font-size: 14px;
+    }
+    #news-detail-board-page p {
+        font-size: 10px;
+    }
+    #news-detail-board-page span {
+        font-size: 10px;
+    }
+    #news-detail-board-page {
+        min-height: 280vw;
+    }
+    .hamburger-menu ul li a {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 250px) {
+    #news-detail-board-page {
+        min-height: 400vw;
     }
 }
