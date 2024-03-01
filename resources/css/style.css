@@ -815,6 +815,9 @@ footer p {
     }
 }
 @media screen and (max-width: 450px) {
+    .hamburger-btn {
+        margin-right: 0 !important;
+    }
     .paginationjs {
         margin-top: 2vw;
     }
