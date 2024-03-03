@@ -18,31 +18,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&family=Maitree:wght@600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
     
     <title>News</title>
+    <link rel="icon" type="image/x-icon" href="./resources/images/logo-mobi.png">
+
 </head>
 <body>
     <div class="grid w-full" id="content">
         <div id="mySidenav" class="sidenav">
-            <a class="" onclick="openNav()">
+            <a class="side-nav-btn" onclick="openNav()">
                 <img src="./resources/images/btn-side-nav.png" alt="" id="close-open">
             </a>
             <img src="./resources/images/logo-mobi.png" alt="" class="side-logo">
             
-            <img src="./resources/images/recharge.png" alt="" class="side-btn">
-            <img src="./resources/images/btn3-mobi.png" alt="" class="side-btn">
-            <img src="../resources/images/btn1-mobi.png" alt="" class="side-btn">
-            <img src="./resources/images/btn2-mobi.png" alt="" class="side-btn">
-            <img src="./resources/images/btn3-mobi.png" alt="" class="side-btn">
+            <a href="">
+                <img src="./resources/images/recharge.png" alt="" class="side-btn">
+            </a>
+            <a href="">
+                <img src="./resources/images/btn3-mobi.png" alt="" class="side-btn">
+            </a>
+            <a href="">
+                <img src="../resources/images/btn1-mobi.png" alt="" class="side-btn">
+            </a>
+            <a href="">
+                <img src="./resources/images/btn2-mobi.png" alt="" class="side-btn">
+            </a>
+            <a href="">
+                <img src="./resources/images/btn3-mobi.png" alt="" class="side-btn">
+            </a>
         </div>
         <!-- Header -->
         <header>
             <!-- NavBar -->
             <nav class="navbar">
                 <!-- Navbar-Mobi -->
-                <img src="./resources/images/logo-mobi.png" alt="" id="logo-mobi">
-                
-                <div class="mobi-btn gap-8 ml-4">
-                    <img src="./resources/images/dowload-mobi.png" alt="" class="button">
-                    <img src="./resources/images/register-mobi.png" alt="" class="button">
+                <a href="" class="logo-mobi">
+                    <img src="./resources/images/logo-mobi.png" alt="" id="logo-mobi">
+                </a>
+                <div class="mobi-btn">
+                    <a href="">
+                        <img src="./resources/images/dowload-mobi.png" alt="" class="button">
+                    </a>
+                    <a href="">
+                        <img src="./resources/images/register-mobi.png" alt="" class="button">
+                    </a>
                 </div>
     
                 <a class="hamburger-btn" onclick="hamburgerBtn()">
@@ -77,7 +94,9 @@
                     <a href="news.html" class="">Tin tức</a>
                     <a href="#" class="">Đăng ký tài khoản</a>
                 </div>
-                <img src="./resources/images/logo.png" alt="logo" id="logo"/>
+                <a href="" class="logo-pc w-full h-full">
+                    <img class="absolute" src="./resources/images/logo.png" alt="logo" id="logo"/>
+                </a>
                 <div class="header-right">
                     <a href="#" class="">Nạp tiền</a>
                     <a href="#" class="">Hướng dẫn</a>
@@ -85,7 +104,6 @@
                 </div>
             </nav>
 
-            <div class="bg-header"></div> 
         </header>
         <!-- Content -->
         <main class="main">
@@ -102,9 +120,9 @@
         <div class="news-btn-page">
             <div class="flex gap-4">
                 <div class="gap-4">
-                    <div class="dowload-btn">
+                    <a class="dowload-btn button">
                         <img src="./resources/images/non-active.png" alt="" class="w-full">
-                    </div>
+                    </a>
                     <div class="btn-group relative mt-3">
                         <img src="./resources/images/btn-group.png" alt="" class="h-full">
                         <div class="absolute top-0 left-0 flex-col items-center h-full  btn-left-group">

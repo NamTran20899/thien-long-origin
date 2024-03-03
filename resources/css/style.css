@@ -25,6 +25,11 @@ header {
     z-index: 2;
     object-fit: cover;
 }
+.logo-mobi {
+    display: none;
+    height: 100%;
+    width: 25%;
+}
 .button {
     cursor: pointer;
 }
@@ -49,7 +54,6 @@ header {
     font-size: 1.4vw;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    transform: translateX(0);
 }
 .header-left {
     display: flex;
@@ -91,13 +95,9 @@ header {
     align-items: center;
 }
 .container-content {
-    
     max-width: 1150px;
 }
 /*-- Button-Group --*/
-.dowload-btn img:hover {
-    content: url('../images/active.png');
-}
 .btn-group button {
     display: flex;
     align-items: center;
@@ -401,16 +401,21 @@ footer p {
 }
 /*-- Mobi --*/
 #logo-mobi {
-    display: none;
-    width: 15%;
-    margin-top: 1%;
+    width: 100%;
+    margin-top: 5%;
     margin-left: 3%;
 }
 .mobi-btn {
     display: none;
-}
-.mobi-btn {
     width: 100%;
+    margin-left: 2vw;
+    gap: 2vw;
+}
+.mobi-btn a {
+    height: 100%;
+}
+.mobi-btn a img {
+    width: 20vw;
 }
 .banner-mobi {
     background: url(../images/board-mobi.png);
@@ -496,13 +501,13 @@ footer p {
     top: 100px;
     right: -10px;
 }
-.sidenav a {
+.sidenav .side-nav-btn {
     position: absolute;
     top: 105px;
     left: -50px;
     z-index: 0;
 }
-.sidenav a img {
+.sidenav .side-nav-btn img {
     width: 90px;
     height: 100px;
 }
@@ -518,6 +523,7 @@ footer p {
     padding: 0px 15px 8px 32px;
     width: 205px;
     height: 60px;
+    cursor: pointer;
 }
 /*-- News-Page --*/
 #news-head-page {
@@ -602,6 +608,12 @@ footer p {
     }
 }
 @media screen and (max-width: 1150px) {
+    .logo-pc {
+        display: none;
+    }
+    .mobi-btn {
+        display: flex;
+    }
     #news-detail-board {
         padding-left: 5px;
         padding-right: 5px;
@@ -624,13 +636,8 @@ footer p {
     .navbar #logo {
         display: none;
     }
-    .navbar #logo-mobi {
+    .navbar .logo-mobi {
         display: block;
-    }
-    .mobi-btn {
-        display: flex;
-        margin-left: 2vw;
-        gap: 2vw;
     }
     .header-left, .header-right {
         display: none;
